@@ -13,8 +13,8 @@ const HowItWorks = () => {
       <div className='flex flex-col lg:grid lg:grid-cols-3 gap-6 mx-2 sm:mx-5'>
 
         {/* Step 1 */}
-        <div className='relative'>
-          <div className='bg-gray-300 flex flex-col items-center justify-center shadow-xl space-y-2 py-5 px-4 rounded-xl'>
+        <div className='relative h-full'>
+          <div className='bg-gray-300 flex flex-col items-center justify-center shadow-xl space-y-2 py-5 px-4 rounded-xl h-full'>
             <div className='flex flex-row items-center justify-center gap-5 border-b-2 border-gray-500 pb-2 w-full'>
               <div className='w-12 h-12 flex-shrink-0 bg-blue-700 text-white flex items-center justify-center rounded-full shadow-xl text-3xl font-bold'>1</div>
               <h1 className='font-semibold text-base sm:text-lg'>Paste Job Description</h1>
@@ -43,7 +43,7 @@ const HowItWorks = () => {
             </div>
             <div className='w-2/3 flex flex-row gap-2 items-center'>
               <MdVerified className='flex-shrink-0' />
-              <p className='text-sm'>Get a custom proposal in seconds.</p>
+              <p className='text-sm'>Get custom proposal in seconds.</p>
             </div>
           </div>
           {/* Arrow right on desktop */}
