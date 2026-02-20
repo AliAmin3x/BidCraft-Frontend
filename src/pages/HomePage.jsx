@@ -6,6 +6,7 @@ import Proposal from '../components/Proposal'
 import HowItWorks from '../components/HowItWorks'
 import Footer from '../components/Footer'
 import HeroWaves from '../components/HeroWaves'
+import AnalyticsView from '../components/AnalyticsView'
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
         <Struggle/>
         <Proposal/>
         <HowItWorks/>
+        <AnalyticsView/>
         <Footer/>
         <HeroWaves/>
       </div>
