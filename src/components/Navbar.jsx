@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -23,11 +24,11 @@ export default function Navbar() {
             onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
           >
-            <button className="text-white hover:text-blue-300 font-medium">
+            {/* <button className="text-white hover:text-blue-300 font-medium">
               Features ▾
-            </button>
+            </button> */}
 
-            {dropdownOpen && (
+            {/* {dropdownOpen && (
               <div className="absolute left-0 mt-3 w-48 bg-white border rounded-lg shadow-lg py-2">
                 <Link
                   to="/feature1"
@@ -48,7 +49,7 @@ export default function Navbar() {
                   Feature Three
                 </Link>
               </div>
-            )}
+            )} */}
           </div>
 
           <Link
@@ -65,7 +66,7 @@ export default function Navbar() {
             Login
           </Link>
 
-          <button className="bg-[#2474e4] px-4 py-2 rounded-lg font-semibold text-white shadow-lg hover:bg-[#1e5bb8] transition duration-300 cursor-pointer">
+          <button onClick={() => navigate('/sign-up')} className="bg-[#2474e4] px-4 py-2 rounded-lg font-semibold text-white shadow-lg hover:bg-[#1e5bb8] transition duration-300 cursor-pointer">
             Get Started
           </button>
         </div>

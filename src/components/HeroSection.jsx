@@ -11,10 +11,10 @@ const HeroSection = () => {
         
         {/* Text Content */}
         <div className='flex-1 w-full md:w-1/2 space-y-6 md:space-y-10 text-center md:text-left'>
-          <h1 className='font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white'>
+          <h1 className='font-bold text-5xl sm:text-6xl md:text-4xl lg:text-6xl text-white'>
             Win More Freelancer Jobs with AI-Powered Proposals
           </h1>
-          <p className='font-normal text-base sm:text-lg md:text-xl text-white'>
+          <p className='font-normal text-base sm:text-lg md:text-lg text-white'>
             Generate personalized proposals, track your outreach, and automate follow-ups in one powerful platform.
           </p>
           <div className='space-x-5 sm:space-x-8 flex flex-col sm:flex-row gap-4'>
