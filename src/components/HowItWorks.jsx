@@ -5,7 +5,7 @@ import { BiSolidDownArrow } from "react-icons/bi";
 
 const HowItWorks = () => {
   return (
-    <div className='border-t-2 mx-4 sm:mx-8 md:mx-10 flex flex-col justify-center py-5 border-gray-300 mt-10'>
+    <div id="how-it-works" className='border-t-2 mx-4 sm:mx-8 md:mx-10 flex flex-col justify-center py-5 border-gray-300 mt-10'>
       <h1 className='font-bold text-2xl sm:text-3xl md:text-4xl text-center mb-10 text-gray-800'>
         How It Works
       </h1>

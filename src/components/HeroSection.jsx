@@ -21,9 +21,16 @@ const HeroSection = () => {
             <button className='w-full sm:w-auto bg-[#2474e4] px-4 py-2 rounded-lg font-semibold text-white shadow-lg hover:bg-[#1e5bb8] transition duration-300 cursor-pointer'>
             Start Free - 10 Proposals
           </button>
-          <button className='w-full sm:w-auto bg-white px-4 py-2 rounded-lg font-semibold shadow-lg hover:bg-gray-200 transition duration-300 cursor-pointer'>
-            See how it works
-          </button>
+          <button
+  onClick={() => {
+    document
+      .getElementById("how-it-works")
+      ?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className='w-full sm:w-auto bg-white px-4 py-2 rounded-lg font-semibold shadow-lg hover:bg-gray-200 transition duration-300 cursor-pointer'
+>
+  See how it works
+</button>
           </div>
         </div>
 
