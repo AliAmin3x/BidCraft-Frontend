@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-white">
+        <h1 onClick={() => navigate('/')} className="cursor-pointer text-2xl font-bold text-white">
           BidCraft
         </h1>
 
@@ -52,12 +52,16 @@ export default function Navbar() {
             )} */}
           </div>
 
-          <Link
-            to="/pricing"
-            className="text-white hover:text-blue-300 font-medium"
-          >
-            Pricing
-          </Link>
+          <NavLink
+  to="/pricing"
+  className={({ isActive }) =>
+    isActive
+      ? "text-white font-bold border-b-2 border-white pb-1"
+      : "text-white hover:text-blue-300 font-medium"
+  }
+>
+  Pricing
+</NavLink>
 
           <Link
             to="/login"

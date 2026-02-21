@@ -58,7 +58,7 @@ const Login = () => {
                 placeholder="Enter Your Password"
                 required
               />
-              <h2 className="text-sm mt-2 text-blue-700 hover:underline cursor-pointer">
+              <h2 onClick={() => navigate('/password-reset')} className="text-sm mt-2 text-blue-700 hover:underline cursor-pointer">
                 Forgot password?
               </h2>
             </div>
